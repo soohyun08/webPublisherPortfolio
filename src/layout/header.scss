@@ -1,0 +1,16 @@
+@import "../assets/style/variable.scss";
+
+.header {
+  background-color: $bodyBlack;
+  h1 {
+    margin: 0 auto;
+    padding: 40px 0 40px;
+    a {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 180px;
+      }
+    }
+  }
+}

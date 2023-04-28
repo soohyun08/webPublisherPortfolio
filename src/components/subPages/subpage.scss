@@ -1,0 +1,302 @@
+@import "../../assets/style/variable.scss";
+
+.subPage {
+  background-color: $bodyBlack;
+  color: #fff;
+
+  .wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 40px;
+
+    .subHeadline {
+      font-size: 34px;
+      font-weight: 700;
+      width: 200px;
+      height: 90px;
+      line-height: 90px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    h3,
+    h4 {
+      background: url(../../assets/images/download.png);
+      border: 1px solid #646464;
+      font-weight: 700;
+    }
+
+    h2,
+    h3,
+    h4,
+    strong {
+      font-family: $Chakra;
+      text-transform: capitalize;
+    }
+    h4 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+    li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .prevBtn {
+      width: 200px;
+      border: 1px solid #fff;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      button {
+        background-color: transparent;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        border-right: 1px solid #fff;
+        display: grid;
+        place-content: center;
+        svg {
+          transition: 0.3s;
+          path {
+            fill: #fff;
+          }
+        }
+        &:hover svg {
+          transform: translateX(-5px);
+        }
+      }
+      .num {
+        margin: 0 auto;
+        font-family: $Chakra;
+        font-size: 1.6em;
+        font-weight: 500;
+      }
+    }
+
+    section {
+      margin-bottom: 14vh;
+    }
+
+    h2 {
+      font-size: 54px;
+      font-weight: 600;
+      padding-bottom: 40px;
+    }
+
+    .section1 {
+      margin-bottom: 15vh;
+      display: flex;
+      .title {
+        .aim {
+          margin: 0 60px 0 0;
+          .aimTxt {
+            padding-bottom: 10px;
+
+            h4 {
+              padding: 10px 10px;
+              padding-left: 20px;
+              border-bottom: 1px solid rgb(184, 184, 184);
+              margin-bottom: 10px;
+              position: relative;
+            }
+
+            li {
+              padding-left: 15px;
+              font-size: 18px;
+              font-weight: 200;
+              line-height: 1.6;
+              word-break: keep-all;
+              // list-style: inside lower-roman;
+              list-style: none;
+            }
+          }
+        }
+      }
+      .skill {
+        border: 1px solid rgb(184, 184, 184);
+        width: 310px;
+        h4 {
+          text-align: center;
+          border-bottom: 1px solid rgb(184, 184, 184);
+          padding: 5px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.7;
+          font-weight: 200;
+          padding: 10px;
+          border-bottom: 1px solid rgb(184, 184, 184);
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .section2 {
+      h3 {
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+      }
+      .conventionWrapper {
+        height: 760px;
+        border: #ddd 1px solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        ul {
+          margin: 0 auto;
+          border: #ddd 1px solid;
+          width: 200px;
+          margin: 7px;
+          li {
+            margin-bottom: 10px;
+            padding: 0 10px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #ddd;
+            line-height: 1.5;
+            &:first-of-type {
+              list-style: none;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 500;
+              background-color: rgb(77, 77, 77);
+            }
+          }
+        }
+      }
+    }
+
+    .section3 {
+      h3 {
+        border-top: none;
+        width: 270px;
+        &::after {
+          content: "";
+          width: 860px;
+          height: 1px;
+          background-color: #fff;
+          display: block;
+        }
+      }
+      .description {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+        .structure {
+          img {
+            width: 250px;
+          }
+          figcaption {
+            font-weight: 200;
+            text-align: left;
+          }
+        }
+        .functions {
+          margin-left: 60px;
+          ul {
+            margin-bottom: 50px;
+            li {
+              h5 {
+                font-size: 20px;
+                &:nth-child(1) {
+                  margin-top: -7px;
+                }
+              }
+              ul {
+                li {
+                  font-weight: 300;
+                  line-height: 1.7;
+                  margin-bottom: 10px;
+                  color: #ddd;
+                  word-break: keep-all;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section4 {
+      border-top: #fff 1px solid;
+      position: relative;
+      h4 {
+        line-height: 1;
+        width: 260px;
+        margin-left: auto;
+        border: #fff 1px solid;
+        border-top: none;
+        display: grid;
+        place-content: center;
+      }
+
+      .challenges {
+        margin-top: 80px;
+        margin-left: 20px;
+
+        li {
+          margin: 0 10px 7vh 0;
+          h5 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            position: relative;
+          }
+          p {
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 300;
+            word-break: keep-all;
+            color: #ddd;
+            strong {
+              color: $colorPink;
+            }
+            &:nth-of-type(2) strong {
+              color: $colorYellow;
+            }
+          }
+          img {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .goSite {
+    margin-left: auto;
+    width: 120px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    background-color: $bgColorBlack;
+    cursor: pointer;
+    text-align: center;
+
+    display: grid;
+    place-content: center;
+    span {
+      color: $colorLightGreen;
+      font-size: 6em;
+      animation: mov 2s infinite linear;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+    @keyframes mov {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

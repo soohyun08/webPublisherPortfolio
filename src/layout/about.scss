@@ -1,0 +1,117 @@
+@import "../assets/style/variable.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.tabContainer {
+  background-color: $bodyBlack;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  background-color: $bodyBlack;
+  .intoduce {
+    margin: 0 60px;
+    border-top: 1px solid #fff;
+    display: flex;
+    margin-bottom: 10vh;
+    .imgWrapper {
+      width: 360px;
+      height: 270px;
+      border: 1px solid #fff;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .txt {
+      padding: 3vh 0 0 2vw;
+      p {
+        color: #ddd;
+        margin-bottom: 20px;
+        font-size: 18px;
+        word-break: keep-all;
+      }
+      .tag {
+        color: #efefef;
+        margin: 24px 0;
+        span {
+          font-weight: 200;
+          font-size: 16px;
+          margin-right: 20px;
+        }
+      }
+
+      .connect {
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 1em;
+        font-family: "Pretendard";
+        font-weight: 500;
+        text-transform: capitalize;
+        background-color: rgb(145, 145, 145);
+        color: #222;
+        transition: 0.4s;
+        &:hover {
+          filter: none;
+          cursor: pointer;
+          background-color: #222;
+          color: #fff;
+          box-shadow: rgba(235, 235, 235, 0.35) 0px 1px 10px;
+        }
+      }
+    }
+  }
+  .skill {
+    margin: 20vh 0;
+    h2 {
+      margin: 0 auto;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    }
+    section {
+      display: flex;
+      color: #fff;
+      align-items: flex-start;
+      margin: 15vh 0;
+      h4 {
+        border-bottom: 1px solid #fff;
+        width: 190px;
+        margin-right: 5vw;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      li {
+        font-size: 18px;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .contact {
+    h4,
+    h5 {
+      font-size: 60px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-family: $cafe24;
+      color: $colorLightGreen;
+    }
+    h5 {
+      text-transform: none;
+      font-size: 50px;
+    }
+  }
+}
