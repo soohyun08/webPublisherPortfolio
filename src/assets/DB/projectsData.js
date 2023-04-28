@@ -19,11 +19,11 @@ export default [
   },
   {
     id: 3,
-    name: "케이테마 인테리어",
-    logoImg: "/images/InteriorWhite.png",
-    img: "/images/interiorK.PNG",
-    device: " WEB ",
-    tool: "React",
+    name: "Studio: Mann",
+    logoImg: "/images/responsive/logo.png",
+    img: "/images/responsive/main-screen.png",
+    device: " WEB/TABLET/MOBILE ",
+    tool: "Responsive Web",
     team: "Personal project",
   },
 
